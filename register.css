@@ -1,0 +1,96 @@
+body{
+	
+	font-family: Tahoma, Geneva, sans-serif;
+	color:#fff;
+	background: url(homepage.jpg);
+	background-size: cover;
+}
+.centered{
+			position: absolute;
+			top:30px;
+			left: 650px;
+			transform: translate(-50%,-50%);
+			z-index: 100;
+			color: grey;
+			font-size: 100px;
+}
+.signup{
+	background: rgba(0, 0, 0,0.5);
+	padding: 40px;
+	width: 250px;
+	margin: auto;
+	margin-top: 150px;
+	height: 350px;
+	/*margin-left: 180px;*/
+	border: 3px inset #A9A9A9;
+}
+form{
+	width: 240px;
+	text-align: center;
+}
+input
+{
+	width: 240px;
+	text-align: center;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #fff;
+	font-family: 'Play',sans-serif;
+	font-size: 16px;
+	font-weight: 200px;
+	padding: 10px 0;
+	transition: border 0.5s;
+	outline: none;
+	color: #fff; 
+
+}
+button
+{
+	border: none;
+	width: 190px;
+	background: white;
+	color: #000;
+	font-size: 16px;
+	line-height:25px;
+	padding: 10px 0;
+	border-radius: 15px;
+	cursor: pointer;
+
+}
+button:hover
+{
+	color: #fff;
+	background-color: black;
+
+}
+h2{
+	color: white;
+}
+a{
+	color: yellow;
+	text-decoration:blink;
+}
+a:hover{
+	color: skyblue;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	width: 100px;
+}
+::placeholder{
+	color: aliceblue;
+	opacity: 0.8;
+}
+
+h3{
+	color: white;
+		
+	text-align: center;
+	position: fixed;
+	bottom:0;
+	right:0;
+	font-size: 40px;
+	width: 200px;
+	height:30px;
+}

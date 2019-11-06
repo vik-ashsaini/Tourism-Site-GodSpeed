@@ -1,0 +1,242 @@
+body{
+
+	background-color: white;
+	font-family: Tahoma, Geneva, sans-serif;
+	background-color: #b3ecff;
+
+}
+.toplevel{
+	z-index: 7;
+	position: fixed;
+	top: 5px;
+	width: 100%;
+	width: 20px;
+	color: dodgerblue;
+	opacity: 0.1;
+
+
+}
+.toplabel{
+	background-color: grey;
+	width: 100%;
+
+}
+.maindiv{
+	width:100%;
+	height: 60%;
+	position: absolute;
+
+	top:0px;
+	z-index: 0;
+	background-image: url('sss1.jpg');
+	background-size:100% 100%;
+	transform: translate(-50% -50%);
+	/*box-shadow: 0px 0px 5px 1px grey linear ;*/
+	/*border-bottom: groove 3px dodgerblue;
+	border-left:  groove 3px dodgerblue;
+	border-radius: 2px;*/
+	overflow: hidden;
+	animation:slider 39s linear infinite ;
+
+}
+@keyframes slider{
+
+	 0%{ background-image: url('sss1.jpg'); }
+	7%{ background-image: url('sss2.jpg'); }
+	15%{ background-image: url('sss3.jpg'); }
+	22%{ background-image: url('sss4.jpg'); }
+	30%{ background-image: url('sss5.jpg'); } 
+	 37%{ background-image: url('sss6.jpg'); }
+	45%{ background-image: url('sss7.jpg'); }
+	52%{ background-image: url('sss8.jpg'); }
+	60%{ background-image: url('sss9.jpg'); }
+	67%{ background-image: url('sss10.jpg'); } 
+
+	 75%{ background-image: url('sss11.jpg'); }
+	84%{ background-image: url('sss12.jpg'); }
+	95%{ background-image: url('sss13.jpg'); }
+
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	z-index: 3;
+}
+
+ul li{
+	float: left;
+	width: 200px;
+	height: 40px;
+	background-color: grey;
+	/*opacity: .5;*/
+	line-height: 40px;
+	text-align:center;
+	font-size: 20px; 
+	opacity: 0.7;
+	
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+#welcome{
+	position: absolute;
+	right: 110px;
+}
+ul li button{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	
+	width: 100px;
+	height: 40px;
+	opacity: 0.7;
+	position: absolute;
+	right: 10px;
+	background-color: grey;
+
+
+
+
+  border: none;
+  padding: 8px;
+  text-align: center;
+  
+  display: inline-block;
+   /*margin: 4px 2px;*/
+  cursor: pointer;
+
+}
+ul li button :hover{
+color:#990000;
+opacity: 1;
+border: solid 2px black;
+
+background-color: white;
+
+
+}
+ul li a{
+
+	text-decoration: none;
+	color: white;
+	display: block;
+
+}
+ul li a:hover{
+	background-color:blue;
+}
+
+ul li ul li{
+	display: none;
+}
+
+ul li:hover ul li{
+	display: block;
+}
+
+img{
+	border-radius: 50%;
+}
+
+img:hover {
+  box-shadow: 0px 0px 1px 4px blue;
+}
+
+.column:hover{
+	width:26%;
+	
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+	position: relative;
+	top: 390px;
+
+  float: left;
+  width: 25%;
+  padding: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+
+display: inline-block;
+
+}
+.column .tooltiptext{
+	visibility: hidden;
+	width: 120px;
+	background-color: green;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 50%;
+	left: 50%;
+	margin-left: -60px;
+
+
+}
+.column .tooltiptext::after{
+
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: groove;
+	border-color: black transparent transparent transparent;
+
+}
+
+.column:hover .tooltiptext{
+	visibility: visible;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+	position: relative;
+	top: 390px;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+
+
+ul form li .b1{
+  	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	
+	width: 100px;
+	height: 40px;
+	opacity: 0.7;
+	position: absolute;
+	right: 10px;
+	background-color: grey;
+
+
+
+
+  border: none;
+  padding: 8px;
+  text-align: center;
+  
+  display: inline-block;
+   /*margin: 4px 2px;*/
+  cursor: pointer;
+
+  }
+
+
+
+ 
